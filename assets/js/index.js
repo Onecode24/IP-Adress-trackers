@@ -48,7 +48,27 @@ window.addEventListener('load',()=>{
     .then((data)=>{
         newIP=data.ip;
         search.value=newIP;
-       getinfos(newIP);
+      // getinfos(newIP);
+      fetch(`http://ip-api.com/json/${newIP}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,query`)
+    .then((response)=>{
+        return response.json();
+    })
+    .then((data)=>{
+        infos=data;
+         longitude=infos.lon;
+         latitude=infos.lat;
+        ip.innerHTML=`${infos.query}`;
+        locations.innerHTML=`${infos.city},${infos.country}`
+        timezone.innerHTML=`UTC-${infos.continent}`
+        isp.innerHTML=`${infos.isp}`
+        map.setView([latitude, longitude], 17)
+        L.marker([latitude, longitude]).addTo(map)
+        .bindPopup(`${infos.query} is here`)
+        .openPopup();
+        
+        
+    }) 
+    
        
     })
     

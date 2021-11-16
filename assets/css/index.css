@@ -27,7 +27,8 @@ body{
     align-items: center;
 }
 #search{
-    width: 30%;
+    width: 50%;
+    text-align: center;
     height: 3em;
     border-radius: 10px;
     border: none;
@@ -96,7 +97,7 @@ h3{
 /*.leaflet-container{
     z-index: -1;
 }*/
-@media screen  and(min-width:500px) and (max-width:974px){
+@media screen  and (min-width:500px ) and (max-width:974px){
     .container{  
         margin-top: -150px;
         width: 100%;
