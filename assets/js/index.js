@@ -6,13 +6,13 @@ let locations=document.querySelector('#location')
 let timezone=document.querySelector('#timezone')
 let isp=document.querySelector("#isp")
 let longitude,latitude,ips;
-var map = L.map('map').setView([1, 1], 17);
+var map = L.map('map').setView([ 25.2646, 55.3077], 17);
 let api_key = 'at_tUakp5N6aY0wpTauakIS5I7ewNV3l'
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-
+    L.marker([25.2646, 55.3077]).addTo(map)
 
 function getinfos(newIP){
     fetch(`http://ip-api.com/json/${newIP}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,query`)
