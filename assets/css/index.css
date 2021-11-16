@@ -1,0 +1,107 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    height: 130vh;
+    background-color: #dfddd9;
+}
+.container-fluid{
+    height: 35%;
+    background-image: url("../../images/pattern-bg.png");
+}
+.head{
+    padding: 2%;
+    font-size: 28px;
+    color: white;
+    font-weight: 700;
+}
+.Search{
+    color: White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    width: 30%;
+    height: 3em;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.548);
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95em;
+    font-weight: 800;
+    color: rgba(31, 32, 32, 0.404);
+    margin-top: 15px;
+    height: 15px;
+    padding-bottom: 15px;
+}
+.container{
+    border: 1px whitesmoke solid;
+    height: auto;
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: -80px;
+    width: 100%;
+    z-index: 2;
+}
+.col{
+    padding-top: 5px;
+    display: block;
+}
+h3{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    height: auto;
+    padding-left: 55px;
+    text-align: center;
+}
+#submit{
+    width: 1.5em;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    position: relative;
+    margin-left: -8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top:-5px ;
+}
+#map{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+
+}
+.local{
+    position: relative;
+    display: flex;
+    display: flex;
+}
+/*.leaflet-container{
+    z-index: -1;
+}*/
+@media screen  and(min-width:500px) and (max-width:974px){
+    .container{  
+        margin-top: -150px;
+        width: 100%;
+    }
+    #search{
+        width: 100%;   
+    }
+}
