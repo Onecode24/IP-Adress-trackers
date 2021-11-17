@@ -45,7 +45,7 @@ p{
     font-weight: 800;
     color: rgba(31, 32, 32, 0.404);
     margin-top: 15px;
-    height: 15px;
+    height: auto;
     padding-bottom: 15px;
     width: 100%;
     text-align: center;
@@ -58,7 +58,6 @@ p{
     border-radius: 12px;
     margin-top: -80px;
     width: 100%;
-    z-index: 2;
 }
 .col{
     padding-top: 5px;
@@ -97,6 +96,9 @@ h3{
     display: flex;
     display: flex;
 }
+.click{
+    margin-top: 0px;
+}
 /*.leaflet-container{
     z-index: -1;
 }*/
@@ -105,6 +107,7 @@ h3{
         margin-top: -100px;
         width: 100%;
     }
+
 }
 @media screen  and (max-width:575px ){
     #search{
