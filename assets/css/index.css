@@ -47,6 +47,8 @@ p{
     margin-top: 15px;
     height: 15px;
     padding-bottom: 15px;
+    width: 100%;
+    text-align: center;
 }
 .container{
     border: 1px whitesmoke solid;
@@ -87,7 +89,7 @@ h3{
     height: 90vh;
     width: 100%;
     position: absolute;
-
+    visibility: visible;
 }
 .local{
     position: relative;
@@ -99,10 +101,12 @@ h3{
 }*/
 @media screen  and (min-width:500px ) and (max-width:974px){
     .container{  
-        margin-top: -150px;
+        margin-top: -100px;
         width: 100%;
     }
+}
+@media screen  and (max-width:575px ){
     #search{
-        width: 100%;   
+        width: 80%;   
     }
 }
