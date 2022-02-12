@@ -7,8 +7,9 @@ let timezone=document.querySelector('#timezone')
 let isp=document.querySelector("#isp")
 let longitude,latitude,ips;
 let maps=document.querySelector('.container')
-let api_key = 'at_tUakp5N6aY0wpTauakIS5I7ewNV3l'
+let api_key = 'at_klhYIy7LiDhjJoSDiFCOExYezspuE'
 let container=document.querySelector('.container')
+
 //initialisation de la maps
 var map = L.map('map').setView([ 6.3561, 2.3833], 17);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
